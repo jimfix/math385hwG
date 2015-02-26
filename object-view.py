@@ -121,7 +121,7 @@ def draw():
 
     if selected_face and add_face:
         # paint that face's vertices Green
-        rgb_selected = [0.5,0.8,0.2] #GREEN
+        rgb_selected = [0.7,0.9,0.6] #GREEN
         for change in range(9):
             colors[selected_face.id * 9 + change] = rgb_selected[change % 3]
         # update the color buffer
