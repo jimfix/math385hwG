@@ -120,8 +120,8 @@ def draw():
     glBindBuffer (GL_ARRAY_BUFFER, color_buffer)
 
     if selected_face and add_face:
-        # paint that face's vertices ORANGE
-        rgb_selected = [0.95,0.2,0.2] # ORANGE
+        # paint that face's vertices Green
+        rgb_selected = [0.5,0.8,0.2] #GREEN
         for change in range(9):
             colors[selected_face.id * 9 + change] = rgb_selected[change % 3]
         # update the color buffer
