@@ -54,7 +54,6 @@ class fan:
     #
     def __iter__(self):
         self.which = self.vertex.edge     # First edge on the fan.
-        print('start:',self.vertex.edge)
         return self
 
     # __next__
@@ -63,8 +62,6 @@ class fan:
     #
     def __next__(self):
 
-        print('next: ends: ',self.which, self.vertex.edge)
-        
         if self.which == None:
             # If we've exhausted the edges that form the fan, stop.
             raise StopIteration
